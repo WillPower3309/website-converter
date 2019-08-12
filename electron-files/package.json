@@ -2,13 +2,14 @@
   "name": "electron-files",
   "version": "1.0.0",
   "description": "Contains files for electron application",
-  "main": "./main.js",
+  "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
   "author": "William McKinnon",
   "license": "ISC",
   "devDependencies": {
+    "electron": "^6.0.1",
     "electron-prebuilt": "^1.4.13"
   }
 }
