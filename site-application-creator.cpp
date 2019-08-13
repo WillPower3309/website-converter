@@ -1,10 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <iostream>
-#include <direct.h>
-#include <windows.h>
 #include <fstream>
-#include <string>
 
 using namespace std;
 
