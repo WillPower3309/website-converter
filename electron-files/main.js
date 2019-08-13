@@ -13,11 +13,11 @@ function createWindow () {
     height: 600
   })
 
-  // and load the index.html of the app.
-  mainWindow.loadURL('http://www.google.com')
-
-  // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+var fs = require('fs')
+fs.readFile("url.txt", 'utf8', function(err, data) {
+  if (err) throw err
+  mainWindow.loadURL(data)
+});
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
@@ -45,6 +45,3 @@ app.on('activate', function () {
   // dock icon is clicked and there are no other windows open.
   if (mainWindow === null) createWindow()
 })
-
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
