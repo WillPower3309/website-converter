@@ -22,15 +22,6 @@ int main() {
 	// electron is installed, proceed with program
 	else {
 		printf("Electron is installed!\n");
-
-		// get the current directory, and store it
-		//_getcwd(oldDir, sizeof(oldDir));
-		//_chdir("D:\Windows\Documents\GitHub\website-converter\Debug\electron-files");
-		//printf("%s\n", oldDir);
-		//system("dir");
-		//system("cd electron-files");
-		//system("electron .");
-		system("dir");
 		system("run-electron.bat");
 	}
 
