@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="site-application-creator.c">
+    <ClCompile Include="site-application-creator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
