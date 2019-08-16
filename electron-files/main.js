@@ -14,9 +14,10 @@ function createWindow () {
   })
 
 var fs = require('fs')
-fs.readFile("url.txt", 'utf8', function(err, data) {
-  if (err) throw err
-  mainWindow.loadURL(data)
+fs.readFile("url.json", 'utf8', function(err, data) {
+  if (err) throw err;
+  var json = JSON.parse(data);
+  mainWindow.loadURL(json.url)
 });
 
   // Emitted when the window is closed.
