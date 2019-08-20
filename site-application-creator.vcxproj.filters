@@ -13,10 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\electron-files">
+      <UniqueIdentifier>{36985bed-5c76-4aa5-a44e-3eed7051b5ed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="site-application-creator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="run-electron.bat">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="electron-files\.gitignore">
+      <Filter>Source Files\electron-files</Filter>
+    </None>
+    <None Include="electron-files\main.js">
+      <Filter>Source Files\electron-files</Filter>
+    </None>
+    <None Include="electron-files\package.json">
+      <Filter>Source Files\electron-files</Filter>
+    </None>
+    <None Include="electron-files\package-lock.json">
+      <Filter>Source Files\electron-files</Filter>
+    </None>
   </ItemGroup>
 </Project>

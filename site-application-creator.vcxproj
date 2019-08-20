@@ -154,6 +154,13 @@
   <ItemGroup>
     <ClCompile Include="site-application-creator.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="electron-files\.gitignore" />
+    <None Include="electron-files\main.js" />
+    <None Include="electron-files\package-lock.json" />
+    <None Include="electron-files\package.json" />
+    <None Include="run-electron.bat" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
