@@ -1,7 +1,5 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
-const path = require('path')
-
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
@@ -14,10 +12,18 @@ function createWindow () {
   })
 
 var fs = require('fs')
-fs.readFile("url.json", 'utf8', function(err, data) {
+fs.readFile("site.json", 'utf8', function(err, data) {
   if (err) throw err;
   var json = JSON.parse(data);
-  mainWindow.loadURL(json.url)
+  if(json.fullscreen) {
+    mainWindow.setFullScreen(true);
+  }
+  else {
+    // remove menu bar
+    mainWindow.setMenu(null);
+  }
+
+  mainWindow.loadURL(json.url);
 });
 
   // Emitted when the window is closed.
