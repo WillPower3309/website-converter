@@ -9,7 +9,7 @@
   "author": "William McKinnon",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^6.0.1",
+    "electron": "^9.4.0",
     "electron-prebuilt": "^1.4.13"
   }
 }
